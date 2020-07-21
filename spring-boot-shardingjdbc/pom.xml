@@ -8,7 +8,7 @@
         <version>2.1.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.macky</groupId>
+    <groupId>com.evan</groupId>
     <artifactId>spring-boot-shardingjdbc</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-boot-shardingjdbc</name>
@@ -67,6 +67,22 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <mainClass>com.evan.springbootshardingjdbc.SpringBootShardingJdbcApplication</mainClass>    <!-- 入口类名 -->
+                        </manifest>
+                    </archive>
+                    <excludes>
+                        <exclude>**/logback-spring.xml</exclude>
+                    </excludes>
+                </configuration>
             </plugin>
         </plugins>
     </build>
