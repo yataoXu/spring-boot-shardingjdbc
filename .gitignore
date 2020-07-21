@@ -1,4 +1,7 @@
-/build/ 
+/build/
+spring-boot-shardingjdbc/target/
+spring-boot-shardingjdbc/.idea/*
+spring-boot-shardingjdbc/*.iml
 target/
 bin/
 .project
