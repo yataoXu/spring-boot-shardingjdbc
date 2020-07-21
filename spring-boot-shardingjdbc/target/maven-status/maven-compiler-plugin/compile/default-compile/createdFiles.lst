@@ -1,0 +1,6 @@
+com\macky\springbootshardingjdbc\entity\Book.class
+com\macky\springbootshardingjdbc\SpringBootShardingJdbcApplication.class
+com\macky\springbootshardingjdbc\controller\BookController.class
+com\macky\springbootshardingjdbc\mapper\BookMapper.class
+com\macky\springbootshardingjdbc\service\BookService.class
+com\macky\springbootshardingjdbc\service\impl\BookServiceImpl.class
